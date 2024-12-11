@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best FastFood Restaurant | Foodie.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="images/logo.png" alt="Foodie.com" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="item"><a href="#">Home</a></li>
+          <li class="item"><a href="#">Services</a></li>
+          <li class="item"><a href="#">Our Clients</a></li>
+          <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <svg
+          width="45"
+          height="45"
+          viewBox="0 0 15 15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="none"
+            stroke="#ffffff"
+            d="M0 5.5h15m-15-4h15m-15 8h15m-15 4h15"
+          />
+        </svg>
+      </div>
+    </nav>
+    <section id="home">
+      <h1 class="h-primary">Welcome to Foodie.com</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+        dolorum numquam minus.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <button class="btn">Order Now</button>
+    </section>
+    <section id="services-container">
+      <h1 class="h-primary center">Our Services</h1>
+      <div class="services">
+        <!-- <div class="box1">
+                <img src="images/f3.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae explicabo dolorem asperiores doloremque nisi nam dolorum sint inventore officiis. Repudiandae.</p>
+            </div>
+            <div class="box">
+                <img src="images/f3.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus qui sint ipsum nostrum odit similique voluptas, earum corporis ad.</p>
+            </div>
+            <div class="box">
+                <img src="images/f3.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi totam quos, maiores cum modi rerum aspernatur ipsum praesentium recusandae corrupti? </p>
+            </div>-->
+        <div id="box">
+          <img
+            src="https://my-online-meals.netlify.app/img/1.pizza.jpg"
+            alt="#"
+          />
+          <h2 class="secondary">Food Catering</h2>
+          <p class="mid">
+            Explore restaurants that deliver to your doorstep, Browse menus and
+            build your order in seconds and Follow the status of your order with
+            real-time alerts
+          </p>
+        </div>
+        <div id="box">
+          <img
+            src="https://my-online-meals.netlify.app/img/2.burger.jpg"
+            alt="#"
+            width="160px"
+          />
+          <h2 class="secondary">Bulk Ordering</h2>
+          <p class="mid">
+            Explore restaurants that deliver to your doorstep, Browse menus and
+            build your order in seconds and Follow the status of your order with
+            real-time alerts
+          </p>
+        </div>
+        <div id="box">
+          <img src="https://my-online-meals.netlify.app/img/3.jpg" alt="#" />
+          <h2 class="secondary">Online Ordering</h2>
+          <p class="mid">
+            Explore restaurants that deliver to your doorstep, Browse menus and
+            build your order in seconds and Follow the status of your order with
+            real-time alerts
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="client-section">
+      <h1 class="h-primary center">Our Clients</h1>
+      <div id="clients">
+        <div class="client-item">
+          <img
+            src="data:image/png;base64,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"
+            alt="Our Clients"
+          />
+        </div>
+        <div class="client-item">
+          <img
+            src="https://my-online-meals.netlify.app/img/skype.png"
+            alt="Our Clients"
+          />
+        </div>
+        <div class="client-item">
+          <img
+            src="https://my-online-meals.netlify.app/img/apple.png"
+            alt="Our Clients"
+          />
+        </div>
+        <div class="client-item">
+          <img
+            src="https://my-online-meals.netlify.app/img/hp.png"
+            alt="Our Clients"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="h-primary center">Contact Us</h1>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+          <div class="form-group">
+            <label for="phone no">Phone No:</label>
+            <input
+              type="phone"
+              name="name"
+              id="name"
+              placeholder="Phone number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Id:</label>
+            <input type="email" name="name" id="name" placeholder="Email Id" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Here"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="center">
+        Copyright &copy; www.Foodie.com. All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>
